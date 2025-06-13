@@ -22,7 +22,7 @@ export default function Home() {
     <HeroSection>
       <MainContent>
         <h1>
-          🚧 Welcome to the Temporary Gateway for {'{PROJECT_NAME}'} 🚧
+          🚧 Welcome to the Temporary Gateway for refusion.tv 🚧
         </h1>
         <p>
           This website is currently under construction.

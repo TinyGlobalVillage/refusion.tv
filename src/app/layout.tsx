@@ -1,21 +1,20 @@
 'use client';
 
 import GlobalStyle from '@/styles/GlobalStyles';
-import { StyleSheetManager } from 'styled-components';
-import isPropValid from '@emotion/is-prop-valid';
+import { StyledComponentsRegistry } from './StyledComponentsRegistry';
 import React from 'react';
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en">
       <body>
-        <StyleSheetManager shouldForwardProp={isPropValid}>
+        <StyledComponentsRegistry>
           <GlobalStyle />
           {children}
-        </StyleSheetManager>
+        </StyledComponentsRegistry>
       </body>
     </html>
-  )
+  );
 }
 
 // import type { Metadata } from "next";
